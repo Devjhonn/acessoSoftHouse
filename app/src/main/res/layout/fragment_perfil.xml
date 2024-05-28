@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragments.PerfilFragment">
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/profileBackground"
+        app:layout_constraintBottom_toTopOf="@+id/guideline1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:layout_width="88sp"
+        android:layout_height="88sp"
+        android:layout_marginTop="80sp"
+        android:background="@color/white"
+        android:importantForAccessibility="no"
+        app:layout_constraintCircleRadius="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txt_nome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nome"
+        app:layout_constraintStart_toStartOf="@+id/guidelineHorizenLeft"
+        app:layout_constraintTop_toTopOf="@+id/guideline2" />
+
+    <EditText
+        android:id="@+id/edt_nome"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:text=""
+        app:layout_constraintEnd_toStartOf="@+id/guidelineHorizonRight"
+        app:layout_constraintStart_toStartOf="@+id/guidelineHorizenLeft"
+        app:layout_constraintTop_toBottomOf="@+id/txt_nome" />
+
+    <TextView
+        android:id="@+id/txt_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="E-Mail"
+        app:layout_constraintStart_toStartOf="@+id/guidelineHorizenLeft"
+        app:layout_constraintTop_toBottomOf="@+id/edt_nome" />
+
+    <EditText
+        android:id="@+id/edt_email"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineHorizonRight"
+        app:layout_constraintStart_toStartOf="@+id/guidelineHorizenLeft"
+        app:layout_constraintTop_toBottomOf="@+id/txt_email" />
+
+    <TextView
+        android:id="@+id/txt_contato"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Contato"
+        app:layout_constraintStart_toStartOf="@+id/guidelineHorizenLeft"
+        app:layout_constraintTop_toBottomOf="@+id/edt_email" />
+
+    <EditText
+        android:id="@+id/edt_contato"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="phone"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineHorizonRight"
+        app:layout_constraintStart_toStartOf="@+id/guidelineHorizenLeft"
+        app:layout_constraintTop_toBottomOf="@+id/txt_contato" />
+
+    <TextView
+        android:id="@+id/txt_sexo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Sexo"
+        app:layout_constraintStart_toStartOf="@+id/guidelineHorizenLeft"
+        app:layout_constraintTop_toBottomOf="@+id/edt_contato" />
+
+    <EditText
+        android:id="@+id/edt_sexo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineHorizonRight"
+        app:layout_constraintStart_toStartOf="@+id/guidelineHorizenLeft"
+        app:layout_constraintTop_toBottomOf="@+id/txt_sexo" />
+
+    <TextView
+        android:id="@+id/txt_nascimento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Data de Nascimento"
+        app:layout_constraintStart_toStartOf="@+id/guidelineHorizenLeft"
+        app:layout_constraintTop_toBottomOf="@+id/edt_sexo" />
+
+    <EditText
+        android:id="@+id/edt_nascimento"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="date"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineHorizonRight"
+        app:layout_constraintStart_toStartOf="@+id/guidelineHorizenLeft"
+        app:layout_constraintTop_toBottomOf="@+id/txt_nascimento" />
+
+    <TextView
+        android:id="@+id/txt_support"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:textSize="20dp"
+        android:text="Support"
+        app:layout_constraintStart_toStartOf="@+id/guidelineHorizenLeft"
+        app:layout_constraintTop_toBottomOf="@+id/edt_nascimento" />
+
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.25" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.28" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineHorizenLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.04" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineHorizonRight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.96" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
