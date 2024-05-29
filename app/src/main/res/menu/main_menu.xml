@@ -8,6 +8,11 @@
         android:id="@+id/news"
         android:title="News"
         android:icon="@drawable/newspaper_24px"/>
+
+    <item
+        android:id="@+id/agendamentos"
+        android:title="Agendar"
+        android:icon="@drawable/add_circle_24px"/>
     <item
         android:id="@+id/hitorico"
         android:title="Histórico"

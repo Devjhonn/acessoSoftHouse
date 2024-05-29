@@ -5,4 +5,5 @@
     <color name="Background">#E2212020</color>
     <color name="profileBackground">#2C2C2C</color>
     <color name="button">#2C2C2C</color>
+    <color name="primary">#BC252424</color>
 </resources>

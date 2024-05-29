@@ -17,12 +17,6 @@ class RecuperarSenhaActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_recuperar_senha)
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.recuperarSenha)) { v, insets ->
-            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
-            insets
-        }
-
 
         btnRecuperarSenha = findViewById<Button>(R.id.btn_recuperarSenha)
         btnRecuperarSenha.setOnClickListener {
